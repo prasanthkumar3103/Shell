@@ -1,0 +1,138 @@
+
+# TO know which shell we're using
+echo $0
+echo $SHELL
+
+Variables
+---------
+it holds only one value and access via echo $variable name
+creating variables
+a=10
+accessing variables
+echo $a
+
+Array
+----
+it holds multiple values, this we use when we wanna have more than one variable.
+index position start from 0 and goes on.
+
+creation of array(This we call it as list array)
+----------------------------------------------------
+a=(1 2 3 4 5)
+
+accssing array
+-------------
+a[*] --- all the elements in array
+#a[*] --- to get no of elements/length of array
+a[1]  --- accessing element by its position
+a[@]:0 --- to display all element
+a[@]:1 --- to display elements from first position to till end
+
+example:-
+--------
+echo ${a[*]}
+echo ${a[1]}
+
+cut
+------
+c --- character
+f --- field
+d ---- delimeter(field delimeter)
+
+echo bala | cut -c 2-4  #2nd position to 4th
+
+echo bala:prasanth:hema | cut -d: -f2
+
+echo bala:prasanth:hema | cut -d: -f2,3
+
+echo bala:prasanth:hema | cut -d: -f1,3
+
+Realtime example:- tr command
+--------------------------------
+
+echo bala:prasanth:hema | tr '\n' ' '
+
+echo bala:prasanth:hema | tr ':' ' '
+
+echo bala:prasanth:hema | tr ':' '-'
+
+echo prashanth | tr a-z A-Z
+
+
+
+array example
+exmples : cut -d: -f1 /etc/passwd
+
+array=(`cut -d: -f1 /etc/passwd| tr '\n' ' '`)
+echo ${#array[*]}
+
+
+expr
+----
+
+
+example:-
+------
+expr 5 + 7
+
+expr 5 - 7
+
+expr 5 * 7 (this will fail bcoz * has spl meaning in unix)
+
+escaping character : special meaning of variable and works a normal 
+------------------
+expr 5 \* 7 
+
+Here is a list of most of the shell special characters (also called metacharacters):
+* ? [ ] ' " \ $ ; & ( ) | ^ < > new-line space tab
+
+command chaining
+----------------
+echo hi;date;echo kk
+
+echo hi;world
+
+echo hi\;world [ escape character ]
+
+
+Quotes:-
+-------
+Double quotes :- "interpolate variables
+-------------
+Double quotes take away the special meaning of all characters except the following:
+
+ $ for parameter substitution.
+ Backquotes for command substitution.
+ \$ to enable literal dollar signs.
+ \´ to enable literal backquotes.
+ \" to enable embedded double quotes.
+ \\ to enable embedded backslashes.
+ All other \ characters are literal (not special).
+
+echo "Hello; world"
+
+echo "$USER owes <-$1250.**>; [ as of (´date +%m/%d´) ]"
+
+single quotes :- doesnt interpiolate variable - strong
+--------------
+Single quotes prevent variable substitution
+
+echo '$HOME'
+
+
+echo '$USER owes <-$1250.**>; [ as of (`date +%m/%d`) ]'
+
+what is interpolate variables
+-----------------------------
+echo '$HOME'
+
+
+
+
+
+
+
+
+	
+	
+

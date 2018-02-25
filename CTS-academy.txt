@@ -1,0 +1,56 @@
+echo today is 'date +%d-%m-%y'
+
+ls -F
+
+how do u get latest files info
+
+ls -lrt
+
+i need latest 5 files to be displayed in output
+
+ls -lrt | tail -5
+
+ls -lrt | head | tail -2
+
+echo 5+5 | bc
+
+bc stands for : basic calculator in linux.
+
+
+cat>Sample
+
+100	balaji	1000
+200	siva	2000
+300	ppk	3000
+400	hema	4000
+500	raj	5000
+
+cat -n sample
+
+1	100	balaji	1000
+2	200	siva	2000
+3	300	ppk	3000
+4	400	hema	4000
+5	500	raj	5000
+
+wc -l wc -w wc -c sample
+
+paste - - <Sample
+
+100	balaji	1000	200 siva	2000
+300	ppk	3000	400 hema	4000
+500	raj	5000
+
+uniq sample
+car >>sample
+500	raj	5000
+
+cat sample | uniq
+
+sort default sorts with 1st column
+
+sort -k2 sample (to sort on 2nd column,k3 third column)
+
+sort -rk2 sample (reverse sort on 2nd column)
+
+cp source path target path

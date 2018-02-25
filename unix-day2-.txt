@@ -1,0 +1,54 @@
+Q) Which shell we are in?
+	echo $0
+	echo $SHELL
+sol : -sh or /bin/sh
+
+
+Q) how do u access variables in unix?
+
+sol : $
+
+ex: echo a 
+a
+echo $a
+10
+it prints value assigned to the a.
+
+b=5
+echo $b
+
+Arrays
+=======
+Need of Array?
+
+Sol :Array can hold multiple values
+
+How do u access array?
+
+sol: by index (starting from 0)
+
+simple array
+
+a=(1 2 3 4 5)
+
+array assignment
+
+array[1]='hi'
+
+accessing values inside array.
+echo ${a[*]}
+o/p: 1 2 3 4 5
+
+how do u know howmany elements are in array?
+
+echo ${#a[*]}
+o/p: 5
+
+how would u know length of element?
+b=('jio' 'airtel' 'vodafone')
+
+echo ${#b[1]}
+
+o/p :- 6
+
+

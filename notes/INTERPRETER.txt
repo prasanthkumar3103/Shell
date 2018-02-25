@@ -1,0 +1,6 @@
+
+INTERPRETER?
+------------
+it is like translater
+
+it will go and communicate with hardware and converts our code with machine understanding format(OS)
