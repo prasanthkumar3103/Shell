@@ -1,0 +1,6 @@
+to know list of users
+
+awk -F':' '{ print $1}' /etc/passwd
+
+Making all .sh files executable.
+chmod - X *.sh

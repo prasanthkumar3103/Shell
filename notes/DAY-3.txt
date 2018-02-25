@@ -1,0 +1,26 @@
+
+Null command
+------------
+':' represents Null(no output) command
+
+it always evaluates true
+
+this would give never ending process
+
+while :
+	do "i am in loop!"
+	done
+	
+use Ctrl +c or kill command  to exit from inifinite loop
+
+
+
+while loop
+----------
+executes  untill condition is false
+
+
+untill loop
+---------
+executes  untill condition is true
+	

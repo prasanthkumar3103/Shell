@@ -1,0 +1,51 @@
+WHAT IS CONDITIONAL STRUCTURE:-
+=============================
+
+IF THIS BUSINESS CONDITION IS TRUE THEN DO THIS
+
+IF THIS BUSINESS CONDITION IS FALSE THEN DO THIS
+==================================================
+
+a.IF-THEN-ELSE
+
+b.FOR LOOP
+
+c. WHILE LOOP
+
+d. elif(elseif)
+
+
+&& ---LOGICAL AND
+
+|| ---LOGICAL OR
+
+! --- LOGICAL NOT
+
+
+STRING COMPARISION		NUMERIC COMPARISION
+=					-eq
+!=					-ne
+<					-lt
+<=					-le
+>					-gt
+>=					-ge
+
+
+String test:-
+
+-z string
+
+Numeric test:-
+
+FIle test:-
+-f <file>
+
+-d <file>
+
+-r <file>
+
+-w <file>
+
+-x <file>
+
+
